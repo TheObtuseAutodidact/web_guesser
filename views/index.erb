@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      body {
+        background: <%= color %>;
+      }
+    </style>
   </head>
   <body>
+  <div>
+    <h2>Welcome to WebGuesser!</h2>
+  </div>
     <div>
       <form>
         <input type="text" name='guess' />
@@ -10,7 +18,8 @@
       </form>
     </div>
     <p>
-      <%= message %>
+      <%= message %><br>
+      <%= victory %>
     </p>
   </body>
 </html>
